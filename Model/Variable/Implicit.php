@@ -40,8 +40,8 @@ use Hoa\Consistency;
 use Hoa\Praspel;
 use Hoa\Realdom;
 
-if (false === Consistency::entityExists('Hoa\Realdom\Disjunction')) {
-    Consistency\Autoloader::load('Hoa\Realdom\Disjunction');
+if (false === Consistency::entityExists('Hoa\Realdom\Disjunction', true)) {
+    throw new Praspel\Exception('Hoa\Realdom seems to not be loaded.');
 }
 
 /**
